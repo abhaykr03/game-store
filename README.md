@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Description
+
+A website created in angular as a demo project which is basically a type of store where one can search for different games of different platforms along with the ratings and can also watch videos related to the games.
+
+##NOTE:
+After cloneing or forking this project one should always do "npm install" to download node_modules in the project.
