@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'search-bar',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  constructor() { }
+//Injecting angular router as a  dependancy, it'll redirect our appln to searchPage which will be build later
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  onSubmit(form: NgForm){
+    this.router.navigate(['search', form.value.searchValue])
+  }
 }
